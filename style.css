@@ -1,0 +1,18 @@
+/*
+Theme Name: GymFit Theme
+Theme URI: https://yourwebsite.com
+Author: Oluwafemi Oluwatobi Best
+Author URI: https://github.com/BeGatifyDev
+Description: A lightweight, custom WordPress theme for a gym business. Features include a blog, testimonials, gallery, booking, and mobile-optimized split-screen design.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: gymfit-theme
+*/
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #fff;
+  color: #333;
+}

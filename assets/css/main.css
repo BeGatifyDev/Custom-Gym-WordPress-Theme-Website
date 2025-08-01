@@ -1,0 +1,319 @@
+.split-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-panel,
+.right-panel {
+    flex: 1 1 50%;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .left-panel,
+    .right-panel {
+        flex: 1 1 100%;
+    }
+}
+
+/* Booking Section */
+.booking-section {
+    background: #f5f5f5;
+    padding: 40px 20px;
+}
+
+.booking-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form label {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.booking-form input,
+.booking-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-form .btn-book {
+    margin-top: 20px;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.booking-form .btn-book:hover {
+    background: #ff3366;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-item {
+    flex: 0 1 300px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 4rem 0;
+    background: #f9f9f9;
+}
+
+.testimonial-item {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.site-footer {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.site-footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* ✅ Center horizontally */
+    align-items: center;     /* ✅ Center vertically (if needed) */
+    flex-direction: column;  /* ✅ Keep text stacked if more content is added */
+}
+
+
+.site-logo img {
+    max-height: 60px;
+    width: auto;
+    display: block;
+    
+}
+.welcome-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.welcome-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.welcome-section {
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.welcome-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 0;
+}
+
+.welcome-section .container {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.typing-text {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 1.5s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #ff3366;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.cta-btn:hover {
+    transform: scale(1.05);
+    background-color: #ff004c;
+}
+.logo-center {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-center img {
+    max-width: 200px;
+    height: auto;
+    display: inline-block;
+}
+/* Booking Section */
+.booking-section {
+    padding: 100px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url('/wp-content/themes/your-theme/assets/img/booking-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Contact Form 7 Styles */
+.wpcf7-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.wpcf7-form p {
+    margin-bottom: 20px;
+}
+
+.wpcf7-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #ddd;
+}
+
+.wpcf7-form input,
+.wpcf7-form select,
+.wpcf7-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #f7f7f7;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.wpcf7-form input:focus,
+.wpcf7-form select:focus,
+.wpcf7-form textarea:focus {
+    background: #fff;
+    box-shadow: 0 0 0 2px #ff3366;
+    outline: none;
+}
+
+.wpcf7-submit {
+    background-color: #ff3366;
+    color: #f1e206;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.wpcf7-submit:hover {
+    background-color: #e0295b;
+}
+
+/* Remove underline from validation messages */
+span.wpcf7-not-valid-tip {
+    font-size: 14px;
+    color: #ff4c4c;
+}
+.animated-form .form-step {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+/* This class will be added by JS to animate fields in */
+.animated-form .form-step.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
